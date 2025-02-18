@@ -1,2 +1,79 @@
-# PLS_Automation
-The PLS Automation is an extensive code that automates the scoring for the Preschool Language Scale.
+PLS Auto-Scoring
+
+Overview
+
+PLS Auto-Scoring is a Python-based tool designed to automate the scoring of Preschool Language Scale (PLS) assessments for the BRIDGE study. This script processes raw scores from a REDCap export, calculating additional scores except for total raw and standard total scores, which are auto-calculated in REDCap.
+
+This tool was created by Shefali Verma and Michael Khela for use across the LCN, tailored specifically for the BRIDGE REDCap build.
+
+Author
+
+Michael Khela
+Email: michael.khela99@gmail.com
+
+Requirements
+
+Python Version: 3.12.1
+
+Required Python libraries:
+
+pandas (2.2.0)
+openpyxl (3.1.2)
+To install dependencies, run:
+
+pip install pandas openpyxl
+Installation
+
+Clone or download this repository.
+Copy the relevant scripts to your working directory.
+Ensure the input CSV file is formatted correctly with the required columns.
+Usage
+
+1. Identify Participants for Scoring
+Access the BRIDGE_FRAXA_Data_Tracker to find participants with PLS data ready for scoring.
+Only score participants labeled as "Verified raw score entry" in the PLS column.
+2. Export Data from REDCap
+Navigate to Internal REDCap and edit the PLS_raw_for_auto_scoring report.
+Filter for specific subject_id and visit#.
+Click Export Data and choose Raw Data format.
+Save the file in the PLS_inputs folder.
+Ensure the file remains a CSV and is not renamed.
+3. Run the Script
+Run the following command in your terminal:
+
+python BRIDGE_Run_PLS.py
+Alternatively, run the script in Spyder (Anaconda) by:
+
+Opening BRIDGE_Run_PLS.py.
+Updating the Automated_Assessments path if necessary.
+Ensuring the REDCap_file name matches the downloaded CSV.
+Clicking Run to execute the script.
+Once completed, a message should confirm successful execution.
+
+4. Output
+The script generates an output CSV file in the PLS directory, following this format:
+
+Importable_PLS_YYYY-MM-DD.csv
+This file is structured for direct import into REDCap.
+
+Importing Data into REDCap
+
+Navigate to Data Import Tool in REDCap.
+Upload the generated file (Importable_PLS_YYYY-MM-DD.csv).
+Review the data display table:
+No data should be highlighted in red, except preschool_language_scale_complete.
+Verify the correct IDs, arms, and visits.
+Check for -999 values and confirm they make sense.
+If correct, click Import Data.
+5. Update the BRIDGE_FRAXA_Data_Tracker
+Mark Verified in the PLS column for all imported participants.
+This ensures clarity for future assessments.
+Notes
+
+This script is specifically tailored for the BRIDGE study.
+If a -999 value appears, it indicates missing data.
+Only Research Assistants should import the script's output into Internal REDCap.
+Contact
+
+For issues or inquiries, contact:
+Michael Khela – michael.khela99@gmail.com
