@@ -6,10 +6,13 @@ PLS Auto-Scoring is a Python-based tool designed to automate the scoring of Pres
 
 This tool was created by Shefali Verma and Michael Khela for use across the LCN, tailored specifically for the BRIDGE REDCap build.  
 
-## Author  
+## Authors  
 
 Michael Khela  
 Email: michael.khela99@gmail.com  
+
+Shefali Verma
+Email: 
 
 ## Requirements  
 
