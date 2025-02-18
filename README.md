@@ -18,9 +18,9 @@ Email:
 **Carol Wilkinson**
 
 ### Contributors  
+- Gabriela Davila Mejia
 - Sophie Hurewitz  
 - Meagan Tsou
-- Gabriela Davila Mejia
 
 ## Requirements  
 
@@ -59,7 +59,7 @@ python BRIDGE_Run_PLS.py
 
 Alternatively, run the script in **Spyder** (Anaconda) by:  
 - Opening `BRIDGE_Run_PLS.py`.  
-- Updating the `Automated_Assessments` path if necessary.  
+- Updating the filepath if necessary.  
 - Ensuring the `REDCap_file name` matches the downloaded CSV.  
 - Clicking **Run** to execute the script.  
 
@@ -72,23 +72,13 @@ The script generates an output CSV file in the `PLS` directory, following this f
 Importable_PLS_YYYY-MM-DD.csv
 ```  
 
-This file is structured for direct import into REDCap.  
-
-## Importing Data into REDCap  
-
-1. Navigate to **Data Import Tool** in REDCap.  
-2. Upload the generated file (`Importable_PLS_YYYY-MM-DD.csv`).  
-3. Review the **data display table**:  
-   - Verify the correct IDs, arms, and visits.  
-   - Check for `-999` values and confirm they make sense.  
-4. If correct, click **Import Data**.  
+This file is structured for direct import into REDCap.   
 ---
 
 ## Notes  
 
 - This script is specifically tailored for the BRIDGE study.  
-- If a `-999` value appears, it indicates missing data.  
-- Only **Research Assistants** should import the script's output into Internal REDCap.  
+- If a `-999` value appears, it indicates missing data.   
 
 ## Contact  
 
