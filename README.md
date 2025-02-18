@@ -80,11 +80,6 @@ This file is structured for direct import into REDCap.
    - Verify the correct IDs, arms, and visits.  
    - Check for `-999` values and confirm they make sense.  
 4. If correct, click **Import Data**.  
-
-### 5. Update the BRIDGE_FRAXA_Data_Tracker  
-- Mark `Verified` in the PLS column for all imported participants.  
-- This ensures clarity for future assessments.  
-
 ---
 
 ## Notes  
@@ -97,3 +92,4 @@ This file is structured for direct import into REDCap.
 
 For issues or inquiries, contact:  
 Michael Khela – michael.khela99@gmail.com  
+Shefali Verma –
