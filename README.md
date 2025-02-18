@@ -12,7 +12,7 @@ Michael Khela
 Email: michael.khela99@gmail.com  
 
 Shefali Verma  
-Email: 
+Email: shefaliverma2004@gmail.com
 
 ### Supervisor
 **Carol Wilkinson**
@@ -84,4 +84,4 @@ This file is structured for direct import into REDCap.
 
 For issues or inquiries, contact:  
 Michael Khela – michael.khela99@gmail.com  
-Shefali Verma –
+Shefali Verma – shefaliverma2004@gmail.com
