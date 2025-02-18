@@ -34,20 +34,15 @@ pip install pandas openpyxl
 2. Copy the relevant scripts to your working directory.  
 3. Ensure the input CSV file is formatted correctly with the required columns.  
 
-## Usage  
+## Usage   
 
-### 1. Identify Participants for Scoring  
-- Access the `BRIDGE_FRAXA_Data_Tracker` to find participants with PLS data ready for scoring.  
-- Only score participants labeled as **"Verified raw score entry"** in the PLS column.  
+### 1. Export Data from REDCap  
+1. Filter for specific `subject_id` and `visit#`.  
+2. Click **Export Data** and choose **Raw Data** format.  
+3. Save the file in the `PLS_inputs` folder.  
+4. Ensure the file remains a CSV and is not renamed.  
 
-### 2. Export Data from REDCap  
-1. Navigate to Internal REDCap and edit the `PLS_raw_for_auto_scoring` report.  
-2. Filter for specific `subject_id` and `visit#`.  
-3. Click **Export Data** and choose **Raw Data** format.  
-4. Save the file in the `PLS_inputs` folder.  
-5. Ensure the file remains a CSV and is not renamed.  
-
-### 3. Run the Script  
+### 2. Run the Script  
 Run the following command in your terminal:  
 
 ```sh
@@ -62,7 +57,7 @@ Alternatively, run the script in **Spyder** (Anaconda) by:
 
 Once completed, a message should confirm successful execution.  
 
-### 4. Output  
+### 3. Output  
 The script generates an output CSV file in the `PLS` directory, following this format:  
 
 ```
@@ -76,7 +71,6 @@ This file is structured for direct import into REDCap.
 1. Navigate to **Data Import Tool** in REDCap.  
 2. Upload the generated file (`Importable_PLS_YYYY-MM-DD.csv`).  
 3. Review the **data display table**:  
-   - No data should be highlighted in red, except `preschool_language_scale_complete`.  
    - Verify the correct IDs, arms, and visits.  
    - Check for `-999` values and confirm they make sense.  
 4. If correct, click **Import Data**.  
