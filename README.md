@@ -11,7 +11,7 @@ This tool was created by Shefali Verma and Michael Khela for use across the LCN,
 Michael Khela  
 Email: michael.khela99@gmail.com  
 
-Shefali Verma
+Shefali Verma  
 Email: 
 
 ## Requirements  
