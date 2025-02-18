@@ -14,6 +14,14 @@ Email: michael.khela99@gmail.com
 Shefali Verma  
 Email: 
 
+### Supervisor
+**Carol Wilkinson**
+
+### Contributors  
+- Sophie Hurewitz  
+- Meagan Tsou
+- Gabriela Davila Mejia
+
 ## Requirements  
 
 **Python Version:** 3.12.1  
